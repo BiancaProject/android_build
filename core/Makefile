@@ -5371,6 +5371,9 @@ endif
 ifneq ($(BOARD_PARTIAL_OTA_UPDATE_PARTITIONS_LIST),)
 	$(hide) echo "partial_ota_update_partitions_list=$(BOARD_PARTIAL_OTA_UPDATE_PARTITIONS_LIST)" >> $@
 endif
+ifneq ($(TARGET_OTA_ASSERT_DEVICE),)
+	$(hide) echo "ota_override_device=$(TARGET_OTA_ASSERT_DEVICE)" >> $@
+endif
 ifeq ($(BUILDING_WITH_VSDK),true)
 	$(hide) echo "building_with_vsdk=true" >> $@
 endif
@@ -5379,6 +5382,7 @@ ifeq ($(TARGET_FLATTEN_APEX),false)
 endif
 
 $(call declare-0p-target,$(INSTALLED_MISC_INFO_TARGET))
+
 
 .PHONY: misc_info
 misc_info: $(INSTALLED_MISC_INFO_TARGET)
