@@ -51,7 +51,6 @@ PRODUCT_PACKAGES += \
     MmsService \
     MtpService \
     MusicFX \
-    NfcNci \
     PacProcessor \
     PrintRecommendationService \
     PrintSpooler \
