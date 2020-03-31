@@ -69,7 +69,6 @@ PRODUCT_PACKAGES += \
     Telecom \
     TelephonyProvider \
     TeleService \
-    Traceur \
     UserDictionaryProvider \
     VpnDialogs \
     vr \
@@ -92,3 +91,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Include vendor build hook
 $(call inherit-product-if-exists, vendor/bianca/build/product.mk)
+
+# Traceur for debug only
+PRODUCT_PACKAGES_ENG += \
+    Traceur
