@@ -461,7 +461,7 @@ BUILD_WITHOUT_PV := true
 ADDITIONAL_SYSTEM_PROPERTIES += net.bt.name=Android
 
 # Include vendor build hook
--include vendor/proton/build/main.mk
+-include vendor/bianca/build/main.mk
 
 # ------------------------------------------------------------
 # Define a function that, given a list of module tags, returns
